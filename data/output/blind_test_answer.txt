@@ -1,0 +1,4 @@
+Clip A: RIFE Interpolated
+Clip B: Original 60fps
+
+Guess which clip is the AI-interpolated one!

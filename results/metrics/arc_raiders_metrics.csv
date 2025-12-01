@@ -1,0 +1,2 @@
+psnr_mean,psnr_std,psnr_min,psnr_max,ssim_mean,ssim_std,ssim_min,ssim_max,frame_count,reference_resolution,reference_fps,interpolated_resolution,interpolated_fps,estimated_processing_fps,timestamp
+13.120651680625423,3.0024655202632538,10.892549680058448,37.223771829489095,0.28572309017181396,0.11180625110864639,0.17037765681743622,0.9948283433914185,303,3840x1080,60.0,3840x1080,60.0,22.5,2025-12-01 02:58:18
