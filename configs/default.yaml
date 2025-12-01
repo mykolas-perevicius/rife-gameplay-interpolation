@@ -1,0 +1,14 @@
+model:
+  version: "4.25"
+  weights_path: "train_log/flownet.pkl"
+interpolation:
+  default_multi: 2
+  scale: 1.0
+hardware:
+  gpu_id: 0
+  fp16: true
+output:
+  codec: "libx264"
+  crf: 18
+metrics:
+  calculate: ["psnr", "ssim", "vmaf"]
