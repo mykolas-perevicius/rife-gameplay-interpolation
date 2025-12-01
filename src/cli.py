@@ -55,7 +55,7 @@ def cli(ctx, verbose, config):
 @click.option("--scale", "-s", default=1.0, type=float, help="Input scale factor (0.5 for half res)")
 @click.pass_context
 def interpolate(ctx, input_video, output_video, multi, model, scale):
-    """�� Interpolate video frames using RIFE.
+    """🚀 Interpolate video frames using RIFE.
     
     Examples:
         rife interpolate gameplay.mp4 gameplay_60fps.mp4

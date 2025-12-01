@@ -36,7 +36,7 @@ This project uses **RIFE (Real-Time Intermediate Flow Estimation)** to enhance r
 - **🔧 Easy Setup** - One-command environment configuration
 - **📝 Logging** - Comprehensive logs for debugging and analysis
 
-## ��️ Installation
+## 🛠️ Installation
 
 ### Prerequisites
 
