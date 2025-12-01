@@ -1,14 +1,44 @@
+# RIFE Gameplay Interpolation Configuration
+# =========================================
+
 model:
-  version: "4.25"
+  version: "4.25"           # RIFE model version
   weights_path: "train_log/flownet.pkl"
+  lite: false               # Use lightweight model
+
 interpolation:
-  default_multi: 2
-  scale: 1.0
+  default_multi: 2          # Default multiplier (2, 4, 8)
+  scale: 1.0                # Input scale factor
+  scene_detection: true     # Detect scene changes
+  fp16: true                # Half precision inference
+
 hardware:
-  gpu_id: 0
-  fp16: true
+  gpu_id: 0                 # CUDA device
+  batch_size: 1             # Frames per batch
+
 output:
   codec: "libx264"
-  crf: 18
+  crf: 18                   # Quality (lower = better)
+  preset: "medium"          # Encoding speed
+  audio: true               # Copy audio
+
 metrics:
-  calculate: ["psnr", "ssim", "vmaf"]
+  default: ["psnr", "ssim", "vmaf"]
+  vmaf_model: "vmaf_v0.6.1"
+
+benchmark:
+  resolutions: ["720p", "1080p", "1440p"]
+  warmup_frames: 10
+  test_duration: 5          # Seconds
+
+logging:
+  level: "INFO"
+  file_logging: true
+  retention_days: 7
+
+# Test games
+games:
+  - name: "Escape from Tarkov"
+    id: "tarkov"
+  - name: "ARC Raiders"
+    id: "arc"

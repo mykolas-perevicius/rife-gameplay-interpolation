@@ -1,11 +1,50 @@
+# Core ML
 torch>=2.0.0
 torchvision>=0.15.0
 numpy>=1.24.0
+
+# Video Processing
 opencv-python>=4.8.0
 ffmpeg-python>=0.2.0
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.8
+
+# Quality Metrics
 ffmpeg-quality-metrics>=3.4.0
+
+# CLI & UX
+click>=8.1.0
+rich>=13.5.0
+typer>=0.9.0
+
+# Configuration
 pyyaml>=6.0
-tqdm>=4.65.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Logging
+loguru>=0.7.0
+
+# Data & Analysis
 pandas>=2.0.0
 matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# Jupyter
 jupyterlab>=4.0.0
+ipywidgets>=8.0.0
+nbformat>=5.9.0
+
+# Development
+black>=23.0.0
+isort>=5.12.0
+ruff>=0.1.0
+pytest>=7.3.0
+pytest-cov>=4.1.0
+pre-commit>=3.3.0
+
+# Documentation
+mkdocs>=1.5.0
+mkdocs-material>=9.4.0

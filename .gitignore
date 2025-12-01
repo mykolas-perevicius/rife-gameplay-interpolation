@@ -1,24 +1,70 @@
+# Byte-compiled
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
 venv/
+env/
 .env
+.venv/
+
+# IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model weights
 *.pth
 *.pkl
 *.onnx
 train_log/
-models/
+Practical-RIFE/
+
+# Video files
 data/raw/
 *.mp4
 *.mkv
 *.avi
 *.mov
+*.webm
+
+# Temp files
 frames/
 temp/
+tmp/
+
+# Results data (keep structure)
+results/metrics/*.json
+results/benchmarks/*.json
+!results/*/.gitkeep
+
+# Logs
+logs/
 *.log
-dist/
-*.egg-info/
-.pytest_cache/
+
+# OS
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Distribution
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Ruff/Black
+.ruff_cache/

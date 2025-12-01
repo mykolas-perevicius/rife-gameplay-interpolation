@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rife-gameplay-interpolation"
+version = "0.1.0"
+description = "AI-powered frame interpolation for gameplay video enhancement"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Mykolas Perevicius", email = "mp@example.com"}]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "opencv-python>=4.8.0",
+    "click>=8.1.0",
+    "rich>=13.5.0",
+    "loguru>=0.7.0",
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0",
+    "pandas>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["black", "ruff", "pytest", "pre-commit"]
+docs = ["mkdocs", "mkdocs-material"]
+
+[project.scripts]
+rife = "src.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/rife-gameplay-interpolation"
+Documentation = "https://github.com/YOUR_USERNAME/rife-gameplay-interpolation#readme"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "N", "W"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
